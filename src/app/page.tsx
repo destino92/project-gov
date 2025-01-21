@@ -6,15 +6,15 @@ export default function MinisterPage() {
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Top Title */}
-      <h1 className="text-4xl font-bold mb-8">JEAN BAPTISTE ONDAYE</h1>
+      <h1 className="text-4xl font-bold mb-8">EULOGE LANDRY KOLELAS</h1>
 
       {/* Main Content Card */}
       <div className="flex flex-col md:flex-row gap-8 mb-12">
         {/* Left Column - Image */}
         <div className="md:w-1/3">
           <Image
-            src="/ministre_ondaye.jpg"
-            alt="JEAN BAPTISTE ONDAYE"
+            src="/euloge-landry-kolelas.jpg"
+            alt="EULOGE LANDRY KOLELAS"
             width={400}
             height={600}
             className="w-full object-cover"
@@ -24,7 +24,7 @@ export default function MinisterPage() {
 
         {/* Right Column - Info */}
         <div className="md:w-2/3 bg-primary p-8 text-white">
-          <h2 className="text-3xl font-bold mb-2">JEAN BAPTISTE ONDAYE</h2>
+          <h2 className="text-3xl font-bold mb-2">EULOGE LANDRY KOLELAS</h2>
           <p className="text-xl mb-8">
             Ministre des finances, du budget et du portefeuille public 
           </p>
