@@ -39,8 +39,8 @@ const NavBar = () => {
                 <hr className="border-r-2 border-primary h-12" />
                 <div className="text-sm">
                     <span className='font-semibold text-black'>République du CONGO</span> <br />
-                    MINISTERE DES FINANCES, <br /> 
-                    DE L&apos;ECONOMIE ET DE LA PLANIFICATION DU DEVELOPPEMENT
+                    MINISTERE A LA REINSERTION <br />
+                    DES EX COMBATTANTS
                 </div>
             </div>
           </Link>
