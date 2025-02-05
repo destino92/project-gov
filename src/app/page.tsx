@@ -1,10 +1,14 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Newspaper, User } from "lucide-react"
+import { ArticleCarousel } from "@/components/LatestArticles"
 
 export default function MinisterPage() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-12 py-8">
+      {/* Article Carousel */}
+      <ArticleCarousel />
+
       {/* Top Title */}
       <h1 className="text-4xl font-bold mb-8">EULOGE LANDRY KOLELAS</h1>
 
