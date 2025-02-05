@@ -2,16 +2,13 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { Menu, X } from 'lucide-react'
 import Image from 'next/image'
-import { usePathname } from 'next/navigation'
 import { MainNav } from './MainNav'
+import { MobileNav } from './MobileNav'
 
 const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(false)
   const [prevScrollPos, setPrevScrollPos] = useState(0)
   const [visible, setVisible] = useState(true)
-  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,12 +20,6 @@ const NavBar = () => {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [prevScrollPos])
-
-  const toggleMenu = () => setIsOpen(!isOpen)
-
-  const isActive = (path: string) => {
-    return pathname === path
-  }
 
   return (
     <nav className={`sticky top-0 z-50 bg-white w-full transition-transform duration-300 ${visible ? "translate-y-0" : "-translate-y-full"}`}>
@@ -48,23 +39,11 @@ const NavBar = () => {
         </Link>
 
         <MainNav />
-
-        <button className="md:hidden" onClick={toggleMenu}>
-        {isOpen ? <X /> : <Menu />}
-        </button>
+        <MobileNav />
       </div>
 
-      {isOpen && (
-        <div className="md:hidden py-4 px-4 border-t border-primary transition-all duration-300 ease-in-out">
-        <div className="flex flex-col space-y-4">
-          <Link href="/" className={`${isActive("/") ? 'border-b-2 border-primary text-primary' : ''} hover:text-primary`}>Le Ministre</Link>
-          <Link href="/cabinet" className={`${isActive("/cabinet") ? 'border-b-2 border-primary text-primary' : ''} hover:text-primary`}>Cabinet</Link>
-          <Link href="/projet" className={`${isActive("/projet") ? 'border-b-2 border-primary text-primary' : ''} hover:text-primary`}>Le projet</Link>
-        </div>
-        </div>
-      )}
       </div>
-      <div className='w-full h-2 bg-center' style={{ backgroundImage: 'url(/Republic_of_Congo_header.png)' }}></div>
+      <div className='w-full h-2 bg-cover sm:bg-center' style={{ backgroundImage: 'url(/Republic_of_Congo_header.png)' }}></div>
     </nav>
   )
 }
