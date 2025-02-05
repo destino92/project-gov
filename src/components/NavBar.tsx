@@ -30,7 +30,6 @@ const NavBar = () => {
             <Image src="/coat-of-arm-cg.png" alt="Répulique du CONGO" width="68" height="68" />
             <hr className="border-r-2 border-primary h-12" />
             <div className="text-sm">
-              <span className='font-semibold text-black'>République du CONGO</span> <br />
               PRÉSIDENCE DE LA RÉPUBLIQUE<br />
               CABINET DU CHEF L&apos;ÉTAT<br />
               HAUT COMMISSARIAT À LA RÉINSERTION DES EX-COMBATTANTS
