@@ -24,26 +24,25 @@ const NavBar = () => {
   return (
     <nav className={`sticky top-0 z-50 bg-white w-full transition-transform duration-300 ${visible ? "translate-y-0" : "-translate-y-full"}`}>
       <div className="container mx-auto px-4 text-lg">
-      <div className="flex items-center justify-between py-4 w-full">
-        <Link href="/" className="flex text-2xl font-bold items-center space-x-2 text-primary">
-        <div className='flex items-center space-x-4'>
-          <Image src="/coat-of-arm-cg.png" alt="Répulique du CONGO" width="68" height="68" />
-          <hr className="border-r-2 border-primary h-12" />
-          <div className="text-sm">
-            <span className='font-semibold text-black'>République du CONGO</span> <br />
-            PRÉSIDENCE DE LA RÉPUBLIQUE<br />
-            CABINET DU CHEF L&apos;ÉTAT<br />
-            HAUT COMMISSARIAT À LA RÉINSERTION DES EX-COMBATTANTS
+        <div className="flex items-center justify-between py-4 w-full">
+          <Link href="/" className="flex text-2xl font-bold items-center space-x-2 text-primary">
+          <div className='flex items-center space-x-4'>
+            <Image src="/coat-of-arm-cg.png" alt="Répulique du CONGO" width="68" height="68" />
+            <hr className="border-r-2 border-primary h-12" />
+            <div className="text-sm">
+              <span className='font-semibold text-black'>République du CONGO</span> <br />
+              PRÉSIDENCE DE LA RÉPUBLIQUE<br />
+              CABINET DU CHEF L&apos;ÉTAT<br />
+              HAUT COMMISSARIAT À LA RÉINSERTION DES EX-COMBATTANTS
+            </div>
           </div>
+          </Link>
+
+          <MobileNav />
         </div>
-        </Link>
-
-        <MainNav />
-        <MobileNav />
       </div>
-
-      </div>
-      <div className='w-full h-2 bg-cover sm:bg-center' style={{ backgroundImage: 'url(/Republic_of_Congo_header.png)' }}></div>
+      <MainNav />
+      <div className='hidden md:block w-full h-2 bg-cover sm:bg-center' style={{ backgroundImage: 'url(/Republic_of_Congo_header.png)' }}></div>
     </nav>
   )
 }

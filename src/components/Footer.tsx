@@ -2,6 +2,7 @@ import { Facebook, Twitter, Youtube, Rss } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
+
 export default function Footer() {
   return (
     <footer className="bg-[#1C1C1C] text-white pt-12 pb-4 mt-12">
@@ -120,7 +121,7 @@ export default function Footer() {
 
         {/* Copyright Section */}
         <div className="mt-12 pt-4 border-t border-gray-800 text-sm text-gray-400 flex flex-wrap justify-between items-center">
-          <p>Copyright © 2025 Ministère de l&apos;Économie & des Finances</p>
+          <p>Copyright © 2025 Haut commissariat à la réinsertion des ex-combattants</p>
           <div className="flex items-center gap-4">
             <p>
               Développé par{" "}

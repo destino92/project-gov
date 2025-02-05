@@ -14,7 +14,7 @@ import {
 export function MainNav() {
 
   return (
-    <div className="hidden md:flex items-center space-x-8">
+    <div className="hidden md:flex items-center space-x-8 justify-end w-full">
       <nav className="flex items-center gap-4 text-sm xl:gap-6">
         <NavigationMenu>
             <NavigationMenuList>

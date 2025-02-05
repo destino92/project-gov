@@ -67,7 +67,7 @@ export function MobileNav() {
                 <div key={item.title}>
                   <span className="text-base">{item.title}</span>
                   {item.items && (
-                    <ul className="ml-4 list-none">
+                    <ul className="ml-4 list-none" key={item.title}>
                       {item.items.map((subItem) => (
                         <li key={subItem.href}>
                           <MobileLink
