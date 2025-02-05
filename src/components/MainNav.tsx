@@ -11,6 +11,7 @@ import {
     NavigationMenuTrigger,
     navigationMenuTriggerStyle,
   } from "@/components/ui/navigation-menu"
+import { ChevronDown } from "lucide-react"
 export function MainNav() {
 
   return (
@@ -28,14 +29,34 @@ export function MainNav() {
                                     <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px]">
                                         {navItem.items.map((item, itemIndex) => (
                                             <li key={itemIndex} className="row-span-3">
-                                                <Link
-                                                    href={navItem.href ?? '#'}
-                                                    legacyBehavior passHref
-                                                >
-                                                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                                        {item.title}
-                                                    </NavigationMenuLink>
-                                                </Link>
+                                                {item.items && item.items.length > 0 ? (
+                                                    <details>
+                                                        <summary className="flex items-center cursor-pointer">
+                                                            <span className={navigationMenuTriggerStyle()}>{item.title}</span>
+                                                            <ChevronDown
+                                                                className="relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-data-[state=open]:rotate-180"
+                                                                aria-hidden="true"
+                                                            />
+                                                        </summary>
+                                                        <ul className="pl-4">
+                                                            {item.items.map((subItem, subItemIndex) => (
+                                                                <li key={subItemIndex}>
+                                                                    <Link href={subItem.href ?? '#'} legacyBehavior passHref>
+                                                                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                                                            {subItem.title}
+                                                                        </NavigationMenuLink>
+                                                                    </Link>
+                                                                </li>
+                                                            ))}
+                                                        </ul>
+                                                    </details>
+                                                ) : (
+                                                    <Link href={item.href ?? '#'} legacyBehavior passHref>
+                                                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                                            {item.title}
+                                                        </NavigationMenuLink>
+                                                    </Link>
+                                                )}
                                             </li>
                                         ))}
                                     </ul>

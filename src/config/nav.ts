@@ -3,12 +3,12 @@ export const mainNav = [
       title: "Presse",
       items: [
         {
-          title: "Actualité",
-          href: "/presse/actualite",
+          title: "Actualités",
+          href: "/presse/actualites",
         },
         {
           title: "Communiqués",
-          href: "/presse/communiqués",
+          href: "/presse/communiques",
         },
         {
           title: "Discours",
@@ -35,20 +35,28 @@ export const mainNav = [
           title: "Les composantes",
           items: [
             {
-              title: "Désarmement et démobilisation",
+              title: "Composante à la Démobilisation et au Désarmement",
               href: "/hcrec/composantes/desarmement",
             },
             {
-              title: "Execution des projets",
-              href: "/hcrec/composantes/execution",
+              title: "Composante à la Réinsertion Économique",
+              href: "/hcrec/composantes/resinsertion-economique",
             },
             {
-              title: "Suivi / evaluation et audit interne",
-              href: "/hcrec/composantes/audit",
+              title: "Composante à la Réinsertion Sociale",
+              href: "/hcrec/composantes/reinsertion-sociale",
             },
             {
-              title: "Réinsertion social",
-              href: "/hcrec/composantes/reinsertion",
+              title: "Composante à l’Exécution des Projets",
+              href: "/hcrec/composantes/projets",
+            },
+            {
+              title: "Composante aux Contentieux et Recours",
+              href: "/hcrec/composantes/contentieux",
+            },
+            {
+              title: "Composante au Suivi/Évaluation et à l’Audit Interne",
+              href: "/hcrec/composantes/contentieux",
             },
           ],
         },
@@ -88,7 +96,7 @@ export const mainNav = [
       title: "PDDR et ses activités",
       items: [
         {
-          title: "Pré lancement",
+          title: "Pré-lancement",
           href: "/pddr/pre-lancement",
         },
         {
@@ -96,7 +104,7 @@ export const mainNav = [
           href: "/pddr/lancement",
         },
         {
-          title: "Post lancement",
+          title: "Post-lancement",
           href: "/pddr/post-lancement",
         },
       ],
