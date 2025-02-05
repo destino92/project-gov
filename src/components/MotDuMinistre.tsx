@@ -21,7 +21,7 @@ export function MotDuMinistre() {
         </div>
 
         {/* Right Column - Info */}
-        <div className="md:w-2/3 bg-primary p-8 text-white">
+        <div className="md:w-2/3 bg-primary p-4 text-white">
           <h2 className="text-3xl font-bold mb-2">EULOGE LANDRY KOLELAS</h2>
           <p className="text-xl mb-8">
             Ministre-Haut commissaire à la réinsertion des ex combattants
