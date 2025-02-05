@@ -109,8 +109,4 @@ export const mainNav = [
         },
       ],
     },
-    {
-      title: "Gallerie",
-      href: "/gallerie",
-    },
 ]
