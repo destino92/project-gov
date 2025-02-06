@@ -4,6 +4,7 @@ import { ChevronRight } from "lucide-react"
 import PagePagination from "@/components/Pagination"
 import { ArticleCard } from "@/components/ArticleCard"
 import { articles } from "@/config/articles"
+import BottomNav from "@/components/Bottom-Nav"
 
 export default function ActualitesPage() {
   return (
@@ -31,6 +32,8 @@ export default function ActualitesPage() {
       <div className="mt-8">
         <PagePagination totalPages={10} currentPage={1} />
       </div>
+
+      <BottomNav title="Communiqués" url="/communiques" />
     </>
   )
 }

@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 import PagePagination from "@/components/Pagination"
+import BottomNav from "@/components/Bottom-Nav"
 
 const communiques = [
   {
@@ -87,6 +88,8 @@ export default function CommuniquesPage() {
       <div className="mt-8">
         <PagePagination totalPages={1} currentPage={1} />
       </div>
+
+      <BottomNav title="Discours" url="/discours" />
     </>
   )
 }

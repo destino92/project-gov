@@ -3,6 +3,7 @@ import Image from "next/image"
 import { ChevronRight } from "lucide-react"
 import PagePagination from "@/components/Pagination"
 import { formatDate } from "@/lib/date"
+import BottomNav from "@/components/Bottom-Nav"
 
 const speeches = [
   {
@@ -98,6 +99,8 @@ export default function DiscoursPage() {
       <div className="mt-8">
         <PagePagination totalPages={1} currentPage={1} />
       </div>
+
+      <BottomNav title="Média" url="/medias" />
     </>
   )
 }

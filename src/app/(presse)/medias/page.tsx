@@ -5,6 +5,7 @@ import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 import { MediaFolder } from "@/components/MediaFolder"
 import { MediaCarousel } from "@/components/MediaCaroussel"
+import BottomNav from "@/components/Bottom-Nav"
 
 const mediaFolders = [
   {
@@ -113,6 +114,8 @@ export default function MediaPage() {
       {selectedFolder && (
         <MediaCarousel isOpen={!!selectedFolder} onClose={() => setSelectedFolder(null)} items={selectedFolder.items} />
       )}
+
+      <BottomNav title="Historique" url="/historique" />
     </>
   )
 }
