@@ -97,7 +97,7 @@ export const mainNav = [
       ],
     },
     {
-      title: "PDDR et ses activités",
+      title: "PDDR-POOL et ses activités",
       items: [
         {
           title: "Pré-lancement",
