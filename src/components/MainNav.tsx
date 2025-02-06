@@ -25,7 +25,7 @@ export function MainNav() {
                             {navItem.items && navItem.items.length > 0 ? (
                             <>
                                 <NavigationMenuTrigger>{navItem.title}</NavigationMenuTrigger>
-                                <NavigationMenuContent className="border-2 border-yellow-300">
+                                <NavigationMenuContent className="bg-yellow-300">
                                     <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px]">
                                         {navItem.items.map((item, itemIndex) => (
                                             <li key={itemIndex} className="row-span-3">
@@ -64,7 +64,7 @@ export function MainNav() {
                             </>
                             ) : (
                                 <Link
-                                    href={navItem.href ?? '#'}
+                                    href={navItem?.href ?? '#'}
                                     legacyBehavior passHref
                                 >
                                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>

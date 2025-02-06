@@ -1,0 +1,38 @@
+export const articles = [
+  {
+    id: 1,
+    title: "Lancement du nouveau programme de réinsertion",
+    subtitle: "Faciliter la réinsertion sociale et économique",
+    snippet: "Un nouveau programme visant à faciliter la réinsertion sociale et économique des ex-combattants...",
+    date: "2024-02-05",
+    image: "https://images.pexels.com/photos/30517382/pexels-photo-30517382/free-photo-of-african-photographer-holding-camera-outdoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    href: "/actualites/1",
+  },
+  {
+    id: 2,
+    title: "Signature d'un accord de partenariat",
+    subtitle: "Renforcement des actions du HCREC",
+    snippet: "Le HCREC a signé un important accord de partenariat pour renforcer ses actions...",
+    date: "2024-02-04",
+    image: "https://images.pexels.com/photos/9792865/pexels-photo-9792865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    href: "/actualites/2",
+  },
+  {
+    id: 3,
+    title: "Bilan des activités 2023",
+    subtitle: "Résultats et avancées majeures",
+    snippet: "Présentation des résultats et des avancées majeures réalisées au cours de l'année...",
+    date: "2024-02-03",
+    image: "https://images.pexels.com/photos/4955754/pexels-photo-4955754.jpeg",
+    href: "/actualites/3",
+  },
+  {
+    id: 4,
+    title: "Formation professionnelle",
+    subtitle: "Nouveau programme pour les jeunes",
+    snippet: "Lancement d'un nouveau programme de formation professionnelle pour les jeunes...",
+    date: "2024-02-02",
+    image: "https://images.pexels.com/photos/6444492/pexels-photo-6444492.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    href: "/actualites/4",
+  },
+]

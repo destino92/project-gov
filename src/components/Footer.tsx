@@ -6,9 +6,9 @@ import { mainNav } from "@/config/nav"
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1C1C1C] text-white pt-12 pb-4 mt-12">
+    <footer className="bg-[#1C1C1C] text-white pt-12 pb-4">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row gap-8">
+        <div className="flex flex-col md:flex-row gap-16">
           <div className="text-center">
             <div className="mt-6">
               <Image

@@ -4,19 +4,19 @@ export const mainNav = [
       items: [
         {
           title: "Actualités",
-          href: "/presse/actualites",
+          href: "/actualites",
         },
         {
           title: "Communiqués",
-          href: "/presse/communiques",
+          href: "/communiques",
         },
         {
           title: "Discours",
-          href: "/presse/discours",
+          href: "/discours",
         },
         {
           title: "Photos/Vidéos",
-          href: "/presse/photos-videos",
+          href: "/medias",
         },
       ],
     },
@@ -67,26 +67,30 @@ export const mainNav = [
       ],
     },
     {
-      title: "Programme",
+      title: "Programmes",
       items: [
         {
-          title: "DDR",
-          href: "/programme/ddr",
+          title: "Désarmement, démobilisation et réintégration (DDR)",
+          href: "/programmes/pddr",
         },
         {
-          title: "Les réalisations passé",
+          title: "Réalisations passées",
           items: [
             {
-              title: "PBF fond japonais 1 pass D",
-              href: "/programme/realisations/pbf1",
+              title: "PBF",
+              href: "/programmes/pbf",
             },
             {
-              title: "PBF fond japonais 2 pass D",
-              href: "/programme/realisations/pbf2",
+              title: "Fonds Japonais 1 (PASD)",
+              href: "/programmes/fonds-japonais-1",
             },
             {
-              title: "Bissalou ya kindzounou",
-              href: "/programme/realisations/bissalou",
+              title: "Fonds Japonais 2 (PASD)",
+              href: "/programmes/fonds-japonais-2",
+            },
+            {
+              title: "Bisalu bia kindzunu (USAID)",
+              href: "/programmes/bisalu-bia-kindzunu",
             },
           ],
         },
@@ -108,5 +112,9 @@ export const mainNav = [
           href: "/pddr/post-lancement",
         },
       ],
+    },
+    {
+      title: "Contact",
+      href: "/contact",
     },
 ]
