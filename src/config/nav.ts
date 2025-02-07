@@ -94,6 +94,45 @@ export const mainNav = [
             },
           ],
         },
+        {
+          title: "Partenaires",
+          items: [
+            {
+              title: "Internationaux",
+              items: [
+                {
+                  title: "PNUD",
+                  href: "/programmes/pbf",
+                },
+                {
+                  title: "PEUPLE DU JAPON",
+                  href: "/programmes/fonds-japonais-1",
+                },
+                {
+                  title: "BANQUE MONDIALE",
+                  href: "/programmes/fonds-japonais-2",
+                },
+                {
+                  title: "USAID",
+                  href: "/programmes/bisalu-bia-kindzunu",
+                },
+              ],
+            },
+            {
+              title: "Nationaux",
+              items: [
+                {
+                  title: "Figa",
+                  href: "/programmes/pbf",
+                },
+                {
+                  title: "Gouvernement",
+                  href: "/programmes/fonds-japonais-1",
+                },
+              ],
+            },
+          ],
+        },
       ],
     },
     {
@@ -110,45 +149,6 @@ export const mainNav = [
         {
           title: "Post-lancement",
           href: "/pddr/post-lancement",
-        },
-      ],
-    },
-    {
-      title: "Partenaires",
-      items: [
-        {
-          title: "Internationaux",
-          items: [
-            {
-              title: "PNUD",
-              href: "/programmes/pbf",
-            },
-            {
-              title: "PEUPLE DU JAPON",
-              href: "/programmes/fonds-japonais-1",
-            },
-            {
-              title: "BANQUE MONDIALE",
-              href: "/programmes/fonds-japonais-2",
-            },
-            {
-              title: "USAID",
-              href: "/programmes/bisalu-bia-kindzunu",
-            },
-          ],
-        },
-        {
-          title: "Nationaux",
-          items: [
-            {
-              title: "Figa",
-              href: "/programmes/pbf",
-            },
-            {
-              title: "Gouvernement",
-              href: "/programmes/fonds-japonais-1",
-            },
-          ],
         },
       ],
     },

@@ -22,7 +22,7 @@ const NavBar = () => {
   }, [prevScrollPos])
 
   return (
-    <nav className={`sticky top-0 z-50 bg-yellow-300 w-full transition-transform duration-300 ${visible ? "translate-y-0" : "-translate-y-full"}`}>
+    <nav className={`sticky top-0 z-50 bg-white w-full transition-transform duration-300 ${visible ? "translate-y-0" : "-translate-y-full"}`}>
       <div className="container mx-auto px-4 text-lg">
         <div className="flex items-center justify-between py-4 w-full">
           <Link href="/" className="flex text-2xl font-bold items-center space-x-2 text-primary">
@@ -32,7 +32,7 @@ const NavBar = () => {
             <div className="text-sm">
               PRÉSIDENCE DE LA RÉPUBLIQUE<br />
               CABINET DU CHEF L&apos;ÉTAT<br />
-              <span className='md:text-2xl text-gray-900'>HAUT COMMISSARIAT À LA RÉINSERTION DES EX-COMBATTANTS</span>
+              <span className='md:text-xl text-gray-900'>HAUT COMMISSARIAT À LA RÉINSERTION DES EX-COMBATTANTS</span>
             </div>
           </div>
           </Link>

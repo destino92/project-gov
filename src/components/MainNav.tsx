@@ -25,7 +25,7 @@ export function MainNav() {
                             {navItem.items && navItem.items.length > 0 ? (
                             <>
                                 <NavigationMenuTrigger>{navItem.title}</NavigationMenuTrigger>
-                                <NavigationMenuContent className="bg-yellow-300">
+                                <NavigationMenuContent className="bg-yellow-300 ">
                                     <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px]">
                                         {navItem.items.map((item, itemIndex) => (
                                             <li key={itemIndex} className="row-span-3">
@@ -41,11 +41,34 @@ export function MainNav() {
                                                         <ul className="pl-4">
                                                             {item.items.map((subItem, subItemIndex) => (
                                                                 <li key={subItemIndex}>
-                                                                    <Link href={subItem.href ?? '#'} legacyBehavior passHref>
-                                                                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                                                            {subItem.title}
-                                                                        </NavigationMenuLink>
-                                                                    </Link>
+                                                                    {'href' in subItem ? (
+                                                                        <Link href={subItem.href ?? '#'} legacyBehavior passHref>
+                                                                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                                                                {subItem.title}
+                                                                            </NavigationMenuLink>
+                                                                        </Link>
+                                                                    ) : (
+                                                                        <details>
+                                                                            <summary className="flex items-center cursor-pointer">
+                                                                                <span className={navigationMenuTriggerStyle()}>{subItem.title}</span>
+                                                                                <ChevronDown
+                                                                                    className="relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-data-[state=open]:rotate-180"
+                                                                                    aria-hidden="true"
+                                                                                />
+                                                                            </summary>
+                                                                            <ul className="pl-4">
+                                                                                {subItem.items.map((nestedItem, nestedItemIndex) => (
+                                                                                    <li key={nestedItemIndex}>
+                                                                                        <Link href={nestedItem.href ?? '#'} legacyBehavior passHref>
+                                                                                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                                                                                {nestedItem.title}
+                                                                                            </NavigationMenuLink>
+                                                                                        </Link>
+                                                                                    </li>
+                                                                                ))}
+                                                                            </ul>
+                                                                        </details>
+                                                                    )}
                                                                 </li>
                                                             ))}
                                                         </ul>

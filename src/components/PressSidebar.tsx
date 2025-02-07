@@ -30,7 +30,7 @@ export function Sidebar({ className, articles }: SidebarProps) {
     <aside className={cn("space-y-8", className)}>
       {/* Quick Links */}
       <div className="bg-white rounded-lg shadow-sm">
-        <h2 className="text-lg font-semibold p-4 bg-yellow-400 text-white">Liens rapides</h2>
+        <h2 className="text-lg font-semibold p-4 bg-yellow-400 text-gray-900">Liens rapides</h2>
         <nav className="p-4">
           <ul className="space-y-2">
             {quickLinks.map((link) => (
@@ -38,8 +38,8 @@ export function Sidebar({ className, articles }: SidebarProps) {
                 <Link
                   href={link.href}
                   className={cn(
-                    "block py-2 px-3 rounded-md hover:bg-gray-100 text-gray-700 hover:text-gray-900",
-                    link.isActive(pathname) && "bg-primary text-white hover:bg-primary hover:text-white",
+                    "block py-2 px-3 rounded-md font-semibold hover:bg-gray-100 text-gray-700 hover:text-gray-900",
+                    link.isActive(pathname) && "bg-primary text-white  hover:bg-primary hover:text-white",
                   )}
                 >
                   {link.title}
