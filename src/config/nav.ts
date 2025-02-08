@@ -25,44 +25,44 @@ export const mainNav = [
       items: [
         {
           title: "Décret de création",
-          href: "/hcrec/decret",
+          href: "/decret",
         },
         {
           title: "Historique",
-          href: "/hcrec/historique",
+          href: "/historique",
         },
         {
           title: "Les composantes",
           items: [
             {
               title: "Composante à la Démobilisation et au Désarmement",
-              href: "/hcrec/composantes/desarmement",
+              href: "/desarmement",
             },
             {
               title: "Composante à la Réinsertion Économique",
-              href: "/hcrec/composantes/resinsertion-economique",
+              href: "/resinsertion-economique",
             },
             {
               title: "Composante à la Réinsertion Sociale",
-              href: "/hcrec/composantes/reinsertion-sociale",
+              href: "/reinsertion-sociale",
             },
             {
               title: "Composante à l’Exécution des Projets",
-              href: "/hcrec/composantes/projets",
+              href: "/projets",
             },
             {
               title: "Composante aux Contentieux et Recours",
-              href: "/hcrec/composantes/contentieux",
+              href: "/contentieux",
             },
             {
               title: "Composante au Suivi/Évaluation et à l’Audit Interne",
-              href: "/hcrec/composantes/contentieux",
+              href: "/audit-interne",
             },
           ],
         },
         {
           title: "Le cabinet",
-          href: "/hcrec/cabinet",
+          href: "/cabinet",
         },
       ],
     },
@@ -71,26 +71,26 @@ export const mainNav = [
       items: [
         {
           title: "Désarmement, démobilisation et réintégration (DDR)",
-          href: "/programmes/pddr",
+          href: "/pddr",
         },
         {
           title: "Réalisations passées",
           items: [
             {
               title: "PBF",
-              href: "/programmes/pbf",
+              href: "/pbf",
             },
             {
               title: "Fonds Japonais 1 (PASD)",
-              href: "/programmes/fonds-japonais-1",
+              href: "/fonds-japonais-1",
             },
             {
               title: "Fonds Japonais 2 (PASD)",
-              href: "/programmes/fonds-japonais-2",
+              href: "/fonds-japonais-2",
             },
             {
               title: "Bisalu bia kindzunu (USAID)",
-              href: "/programmes/bisalu-bia-kindzunu",
+              href: "/bisalu-bia-kindzunu",
             },
           ],
         },
@@ -102,19 +102,19 @@ export const mainNav = [
               items: [
                 {
                   title: "PNUD",
-                  href: "/programmes/pbf",
+                  href: "/pnud",
                 },
                 {
                   title: "PEUPLE DU JAPON",
-                  href: "/programmes/fonds-japonais-1",
+                  href: "/peuple-du-japon",
                 },
                 {
                   title: "BANQUE MONDIALE",
-                  href: "/programmes/fonds-japonais-2",
+                  href: "/banque-mondiale",
                 },
                 {
                   title: "USAID",
-                  href: "/programmes/bisalu-bia-kindzunu",
+                  href: "/usaid",
                 },
               ],
             },
@@ -123,11 +123,11 @@ export const mainNav = [
               items: [
                 {
                   title: "Figa",
-                  href: "/programmes/pbf",
+                  href: "/figa",
                 },
                 {
                   title: "Gouvernement",
-                  href: "/programmes/fonds-japonais-1",
+                  href: "/gouvernement-du-congo",
                 },
               ],
             },
