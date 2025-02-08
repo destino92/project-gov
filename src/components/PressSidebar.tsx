@@ -30,7 +30,7 @@ export function Sidebar({ className, articles }: SidebarProps) {
     <aside className={cn("space-y-8", className)}>
       {/* Quick Links */}
       <div className="bg-white rounded-lg shadow-sm">
-        <h2 className="text-lg font-semibold p-4 bg-yellow-400 text-gray-900">Liens rapides</h2>
+        <h2 className="text-lg font-semibold p-4 bg-yellow-300 text-gray-900">Liens rapides</h2>
         <nav className="p-4">
           <ul className="space-y-2">
             {quickLinks.map((link) => (

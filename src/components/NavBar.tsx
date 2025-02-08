@@ -32,7 +32,7 @@ const NavBar = () => {
             <div className="text-sm">
               PRÉSIDENCE DE LA RÉPUBLIQUE<br />
               CABINET DU CHEF L&apos;ÉTAT<br />
-              <span className='md:text-xl text-gray-900'>HAUT COMMISSARIAT À LA RÉINSERTION DES EX-COMBATTANTS</span>
+              <span className='md:text-lg text-gray-900'>HAUT COMMISSARIAT À LA RÉINSERTION DES EX-COMBATTANTS</span>
             </div>
           </div>
           </Link>
